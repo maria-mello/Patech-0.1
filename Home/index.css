@@ -1,0 +1,55 @@
+body{
+  width: 100vh;
+  height: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-semibold{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.lora{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+}
+
+a{
+  font-family: "Poppins", sans-serif;
+  border: 5px solid yellow;
+}
+
+.navbar{
+  margin-left: -1%;
+  background-color: #0050a3;
+  width: 207.1%;
+}
+
+.Logo{
+  height: 100px;
+}
+
+.pesquisa{
+  border: none;
+  height: 18px;
+}
+
+#usr{
+  background: url("img/iconePesquisa.png") no-repeat left / 1.8em;
+  padding-left: 2em;
+  border-radius: 5px;
+  width: 10%;
+  background-color: whitesmoke;
+}
+
+input::placeholder{
+  color: #0050a3;
+}
