@@ -33,7 +33,9 @@ a {
   justify-content: space-around;
   width: 25%;
   padding-left: 2%;
+  gap: 5%;
 }
+
 
 .navbar {
   margin-left: -1%;
@@ -57,6 +59,11 @@ a {
   border: none;
   height: 20px;
   margin-left: 25%;
+}
+
+#usr.pesquisa{
+  border: 1px solid red;
+
 }
 
 input::placeholder {
@@ -164,19 +171,44 @@ section.slider {
   margin-left: 25%;
 }
 
-.item01,
-.item02,
-.item03 {
-  border: 5px solid yellow;
+.produtos {
   display: flex;
-  width: 10%;
-  height: 10%;
+  width: 110%;
+  height: 110%;
+  align-items: center;
 }
 
-.item01,
-.item02,
-.item03, 
- img{
-  width: 50%;
-  height: 1+50%;
- }
+.itensNovos {
+  margin: 5%;
+  margin-left: 5%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+
+.itensNovos, a{
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.item01, .item02, .item03{
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.item01:hover, .item02:hover, .item03:hover{
+  transform: translateY(-5px);
+}
+
+h1{
+    font-family: "Lora", serif;
+    font-size: 300%;
+    margin-left: 20px;
+    margin-bottom: -3%;
+}
