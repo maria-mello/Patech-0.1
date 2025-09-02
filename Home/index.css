@@ -25,6 +25,7 @@ a {
   font-family: "Poppins", sans-serif;
   border: none;
   color: #ffff;
+  text-decoration: none;
 }
 
 .redirecionamento {
@@ -34,6 +35,7 @@ a {
   width: 25%;
   padding-left: 2%;
   gap: 5%;
+  color: white;
 }
 
 
@@ -55,8 +57,7 @@ a {
   padding-left: 3em;
   border-radius: 8px;
   height: 20px;
-  width: 15%;
-  margin-right: -15%;
+  margin-right: -20%;
   background-color: whitesmoke;
   border: none;
 
@@ -66,10 +67,10 @@ input::placeholder {
   color: #0050a3;
 }
 
-.icones {
+.icones, .pesquisa {
   display: flex;
   flex-direction: row;
-  margin-left: 20%; 
+  margin-left: 25%; 
 }
 
 #dashboard {
@@ -188,11 +189,13 @@ section.slider {
   }
 }
 
-.itensNovos, a{
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+.itensNovos{
+  a{
+   color: black;
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+ }
 }
 
 .item01, .item02, .item03{
@@ -206,11 +209,11 @@ section.slider {
 }
 
 h1{
-    font-family: "Lora", serif;
-    font-size: 300%;
-    margin-left: 20px;
-    margin-bottom: -3%;
-    margin: 5%;
+  font-family: "Lora", serif;
+  font-size: 300%;
+  margin-left: 20px;
+  margin-bottom: -3%;
+  margin: 5%;
 }
 
 .Amarelo{
@@ -258,7 +261,6 @@ h1{
 }
 
 .nossasPecas, .nocasPecas2, .nossasPecas3, .nossasPecas4, a{
-  color: black;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -266,12 +268,19 @@ h1{
 
 .pecas, .pecas1, .pecas2, .pecas3{
   display: flex;
-  width: 120%;
-  height: 120%;
+  width: 80%;
+  height: 80%;
   align-items: center;
 }
 
-.peca1, .peca2, .peca3, .peca4, .peca5, .peca6, .peca7, .peca8, .peca9, .peca10, .peca11, .peca12, .peca13, .peca14, .peca15, .peca16{
+/*Hover*/
+/* .peca1, .peca2, .peca3, .peca4, .peca5, .peca6, .peca7, .peca8{
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.peca9, .peca10, .peca11, .peca12, .peca13, .peca14, .peca15, .peca16{
   position: relative;
   cursor: pointer;
   transition: transform 0.5s ease;
@@ -282,5 +291,15 @@ h1{
 }
 
 .peca9:hover, .peca10:hover, .peca11:hover, .peca12:hover, .peca13:hover, .peca14:hover, .peca15:hover, .peca16:hover{
+  transform: translateY(-6px);
+} */
+
+.pecas, .pecas1, .pecas2, .pecas3, .pecas4, img{
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.peca, .peca1, .peca2, .peca3, .peca4, img:hover{
   transform: translateY(-6px);
 }
