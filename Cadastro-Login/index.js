@@ -31,7 +31,7 @@ cadastroButton.onclick = () => {
 
 // Adiciona um evento de clique ao botão de "entrar"
 entrarButton.onclick = () => {
-  window.location.href = "../Pagina Principal/index.html";
+  window.location.href = "../index.html";
 
 };
 
@@ -41,5 +41,5 @@ cadastrarButton.onclick = () => {
 };
 
 function Sair() {
-  window.location.href = "../Pagina Principal/index.html";
+  window.location.href = "../index.html";
 }
