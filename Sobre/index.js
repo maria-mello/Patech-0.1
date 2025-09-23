@@ -17,10 +17,6 @@ function proximovideo(){
     document.getElementById('radio' + cont).checked = true
 }
 
-function irCadastro(){
-    window.location.href = "../Cadastro-Login"
-}
-
 function irCarrinho() { //chama o carrinho pelo id
   document.getElementById("modalCarrinho").style.display = "block";
 }
