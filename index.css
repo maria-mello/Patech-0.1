@@ -2,6 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > * {
+  max-width: 100%; /* faz com que elementos não ultrapassem a largura da tela */
+}
+
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -65,14 +81,13 @@ p, figcaption{
   padding-left: 35px;
   border-radius: 8px;
   height: 25px;
-  width: 250px;
+  width: 180px;
   background-color: whitesmoke;
   border: none;
 }
 
 .Pesquise{
   margin-left: 25%;
-
 }
 
 input::placeholder {
@@ -84,8 +99,8 @@ input::placeholder {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  gap: 30px;
+  margin-left: 3%;
+  gap: 2%;
 }
 
 #dashboard {
