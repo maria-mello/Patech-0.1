@@ -1,13 +1,10 @@
-html, body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  padding: 0;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 .poppins-regular {
@@ -15,7 +12,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -25,7 +21,7 @@ body {
 .lora {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
-  font-weight: 200px;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -36,10 +32,14 @@ a {
   text-decoration: none;
 }
 
+p, figcaption{
+  font-family: "Poppins", sans-serif;
+
+}
+
 .redirecionamento {
-  margin-right: 0;
+  margin-right: 250px;
   display: flex;
-  flex-grow: 1;
   justify-content: space-around;
   width: 25%;
   padding-left: 2%;
@@ -47,8 +47,8 @@ a {
   color: white;
 }
 
+
 .navbar {
-  margin-left: -1%;
   background-color: #0050a3;
   display: flex;
   align-items: center;
@@ -62,12 +62,16 @@ a {
 
 #usr {
   background: url("img/iconePesquisa.png") no-repeat left / 1.8em;
-  padding-left: 3em;
+  padding-left: 35px;
   border-radius: 8px;
-  height: 20px;
-  margin-right: 20px;
+  height: 25px;
+  width: 250px;
   background-color: whitesmoke;
   border: none;
+}
+
+.Pesquise{
+  margin-left: 25%;
 
 }
 
@@ -75,43 +79,45 @@ input::placeholder {
   color: #0050a3;
 }
 
-.icones, .pesquisa {
+.icones{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  gap: 30px;
 }
 
 #dashboard {
   border: none;
-  background: url("img/iconePerfil.png") no-repeat left / 2.2em;
-  height: 80px;
-  width: 80px;
-  margin-left: -5px;
+  background: url("img/iconePerfil.png") no-repeat left / 2.5em;
+  height: 85px;
+  width: 85px;
   cursor: pointer;
 }
 
 #carrinho {
   border: none;
-  background: url("img/carrinho.png") no-repeat left / 2.2em;
-  height: 80px;
-  width: 80px;
+  background: url("img/carrinho.png") no-repeat left / 2.5em;
+  height: 85px;
+  width: 85px;
   cursor: pointer;
 }
 
 #favoritos {
   border: none;
-  background: url("img/favoritos.png") no-repeat left / 2.2em;
-  height: 80px;
-  width: 80px;
-  margin-left: -5px;
+  background: url("img/favoritos.png") no-repeat left / 2.5em;
+  height: 85px;
+  width: 85px;
   cursor: pointer;
 }
 
-.slider {
-  overflow: hidden;
+section.slider {
   margin: 0 auto;
   width: 100%;
   height: auto;
   padding: 0;
+  overflow: hidden;
 }
 
 .slider-content {
@@ -175,13 +181,14 @@ input::placeholder {
   margin-left: 25%;
 }
 
+
+/* NOVIDADES  */
+
 .produtos {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
-  overflow: hidden;
-
 }
 
 .itensNovos {
@@ -219,37 +226,18 @@ input::placeholder {
 
 h1{
   font-family: "Lora", serif;
-  font-size: 300%;
+  font-size: 350%;
   margin-left: 20px;
-  margin-bottom: -3%;
   margin: 5%;
 }
 
+/* CATEGORIAS */
+
 .Amarelo{
-  margin: 0;
-  padding: 0;
   background-color: #FFE9A7;
-  height: 50%;
+  width: 100;
+  height: 10%;
   border: 1px solid #FFE9A7;
-}
-
-.bgAzul{
-  margin: auto;
-  color: white;
-  background-color: #0050A3;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-}
-
-.bgAzul{
-  back
-  p{
-  display: flex;
-  border: 2px solid red;
-}
 }
 
 .bgAmarelo{
@@ -264,8 +252,8 @@ h1{
 .categorias{
   border-radius: 15px;
   display: flex;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   gap: 5%;
   margin: 5%;
   align-items: center;
@@ -281,48 +269,145 @@ h1{
   transform: translateY(-6px);
 }
 
-.nossasPecas, .nossasPecas2, .nossasPecas3, .nossasPecas4 {
-  margin: 5%;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
 
+/* NOSSOS PRODUTOS  */
+.tituloN{
+  margin-bottom: -5%;
 }
 
-.nossasPecas, .nossasPecas2, .nossasPecas3, .nossasPecas4, a{
+.nossosProdutos {
+  width: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nossasPecas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5%;
+  gap: 5%; 
+}
+.nossasPecas, a{
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
 } 
 
-.pecas, .pecas1, .pecas2, .pecas3{
-  display: flex;
-  width: 80%;
-  height: 80%;
-  align-items: center;
+.p1 {
+  width: 20%; 
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-/*Hover*/
-
-.pecas, .pecas1, .pecas2, .pecas3, .pecas4, img{
+.pecas img{
   position: relative;
   cursor: pointer;
   transition: transform 0.5s ease;
 }
 
-.peca, .peca1, .peca2, .peca3, .peca4, img:hover{
+.peca, img:hover{
   transform: translateY(-6px);
+  transition: transform 0.5s ease;
 }
 
-#teste{
-  height: 200;
-  width: 190px;
+/* RODAPÉ */
+.Azul {
+  height: 400px;
+  background-color: #0050A3;
+  width: 99.9%;
+  border: 1px solid #0050A3;
+    h1 {
+    font-size: 200%;
+    color: white;
+    margin: 5% 0;
+  }  
 }
 
-.p{
-  height: 20%;
-  width: 20%;
+.bgAzul {
+  margin: 5%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.redesSociais, .tituloA, .formasPagamento, .conheca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  color: white;
+}
+
+.formasPagamento {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagamento {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+  margin: 5%;
+}
+
+.logoRodape{
+  display: block;
+  align-items: center;
+  justify-self: center;
+  height: 30%;
+  width: 10%;
+  border-radius: 90%;
+  border: 2px solid #fff;
+}
+
+.imgRodape{
+  display: block;
+  margin-top: -8%
+}
+
+/* MODAL DO CARRINHO */
+.modal-carrinho {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
+}
+
+.modal-conteudo {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.fechar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+  color: black;
 }

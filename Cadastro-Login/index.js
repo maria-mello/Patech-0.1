@@ -31,20 +31,15 @@ cadastroButton.onclick = () => {
 
 // Adiciona um evento de clique ao botão de "entrar"
 entrarButton.onclick = () => {
-  // Remove a classe 'loginActive' do card
-  card.classList.remove("loginActive");
-  // Adiciona a classe 'cadastroActive' ao card
-  card.classList.add("cadastroActive");
+  window.location.href = "../Pagina Principal/index.html";
+
 };
 
 // Adiciona um evento de clique ao botão de "cadastro"
 cadastrarButton.onclick = () => {
-  // Remove a classe 'cadastroActive' do card
-  card.classList.remove("cadastroActive");
-  // Adiciona a classe 'loginActive' ao card
-  card.classList.add("loginActive");
+  window.location.href = "../Usuario/usuario.html";
 };
 
 function Sair() {
-  window.location.href = "../Home/index.html"
+  window.location.href = "../Pagina Principal/index.html";
 }

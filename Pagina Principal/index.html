@@ -25,18 +25,20 @@
 <body>
     <div class="navbar">
         
-        <img class="Logo" src="../Home/img/Logo.png" alt="Logo"></img>   
+        <img class="Logo" src="../Pagina Principal/img/Logo.png" alt="Logo"></img>   
         
         <div class="redirecionamento">  
-        <a href=""> Sobre </a>
+        <a href="../Sobre/index.html"> Sobre </a>
         <a href=""> Compatibilidade </a>
         <a href=""> Promoções </a>
         </div>
         
-        <input type="text" class='pesquisa' id="usr" placeholder="Pesquise na Patech"></input>
+        <div class="Pesquise">
+            <input type="text" class='pesquisa' id="usr" placeholder="Pesquise na Patech"></input>
+        </div>
 
         <div class="icones">
-            <button onclick="" id="carrinho"></button>
+            <button onclick="irCarrinho()" id="carrinho"></button>
             <button onclick="" id="favoritos"></button>
             <button onclick="irCadastro()" id="dashboard"></button>
         </div>
@@ -117,104 +119,151 @@
         </div>
     </section>
 
-    <section class="nossosProdutos">
+    <div class="tituloN">
         <h1> Nossos produtos </h1>
+    </div>
+
+    <section class="nossosProdutos">
         <div class="nossasPecas">
-            <div class="p">
-                <img src="img/peca1.png" class="pecas" id="teste">
+            <div class="p1">
+                <img src="img/peca1.png" class="pecas">
                 <br> <figcaption> Processador Intel Core i3-10100F, 3.6GHz (4.3GHz Max Boost) <br> <p> R$ 629,99 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca2.png" class="pecas" id="teste">
+            <div class="p1">
+                <img src="img/peca2.png" class="pecas">
                 <br> <figcaption> Processador AMD Ryzen 5 5500, 3.6GHz (4.2GHz Max Turbo) <br> <p> R$ 599,00 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca3.png" class="pecas" id="teste">
+            <div class="p1">
+                <img src="img/peca3.png" class="pecas">
                 <br> <figcaption> Memória DDR5 Kingston Fury SuperFrame, RGB, 16GB, 5600Mhz <br> <p> R$ 420,90 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca4.png" class="pecas" id="teste">
-                <br> <figcaption> Placa Mae Gigabyte B550M Aorus Elite, DDR4, Socket AMD AM4, M-ATX <br> <p> R$ 849,99 </p> </figcaption>
+            <div class="p1">
+                <img src="img/peca4.png" class="pecas">
+                <br> <figcaption> Placa Mae Gigabyte B550M Aorus Elite, DDR4, Socket AMD AM4, M-ATX <br> <p> 849,99 </p> </figcaption>
             </div>
-        </div>
-
-        <div class="nossasPecas2">
-            <div class="p">
-                <img src="img/peca5.png" class="pecas1" id="teste">
+        
+            <div class="p1">
+                <img src="img/peca5.png" class="pecas">
                 <br> <figcaption> Placa Mae ASRock B450M Steel Legend, DDR4, Socket AMD AM4, M-ATX <br> <p> R$ 789,99 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca6.png" class="pecas1" id="teste">
+            <div class="p1">
+                <img src="img/peca6.png" class="pecas">
                 <br> <figcaption> Memoria Corsair Dominator Platinum RGB, 16GB (2x8GB), DDR4, 3600MHz <br> <p> R$ 629,99 </p> </figcaption>
-            </div>      
+            </div>
 
-            <div class="p">
-                <img src="img/peca7.png" class="pecas1" id="teste">
+            <div class="p1">
+                <img src="img/peca7.png" class="pecas">
                 <br> <figcaption> Processador AMD Ryzen 5 5600GT, 3.6 GHz, (4.6GHz Max Turbo) <br> <p> R$ 1222,21 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca8.png" class="pecas1" id="teste">
+            <div class="p1">
+                <img src="img/peca8.png" class="pecas">
                 <br> <figcaption> Gabinete Gamer, Mini-Tower, Lateral de Vidro, Com 1 Fan, PG-ATOM-BK <br> <p> R$ 129,99 </p> </figcaption>
             </div>
-        </div>
 
-        <div class="nossasPecas3">
-            <div class="p">
-                <img src="img/peca9.png" class="pecas2" id="teste">
+            <div class="p1">
+                <img src="img/peca9.png" class="pecas">
                 <br> <figcaption> Processador AMD Ryzen 3 3200G, 3.6GHz (4GHz Max Turbo) <br> <p> R$ 538,03 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca10.png" class="pecas2" id="teste">
+            <div class="p1">
+                <img src="img/peca10.png" class="pecas">
                 <br> <figcaption> Memoria Kingston, 16GB (1x16GB), DDR4, 3200MHz, C22, KVR32N22S8-16 <br> <p> R$ 289,99 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca11.png" class="pecas2" id="teste">
+            <div class="p1">
+                <img src="img/peca11.png" class="pecas">
                 <br> <figcaption> Microfone Gamer Maono DGM20, RGB, USB, PC, PS4, PS5 e MAC OS, Com Suporte <br> <p> R$ 333,32 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca12.png" class="pecas2" id="teste">
+            <div class="p1">
+                <img src="img/peca12.png" class="pecas">
                 <br> <figcaption> Processador Intel Core I5 13400f, 2.5GHz (4.6GHz Turbo) <br> <p> R$ 929,57 </p> </figcaption>
             </div>
-        </div>
 
-        <div class="nossasPecas4">
-            <div class="p">
-                <img src="img/peca13.png" class="pecas3" id="teste">
+            <div class="p1">
+                <img src="img/peca13.png" class="pecas">
                 <br> <figcaption> Placa Mae MSI B860M Gaming Plus WiFi, DDR5, LGA1851, M-ATX <br> <p> R$ 1.803,99 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca14.png" class="pecas3" id="teste">
+            <div class="p1">
+                <img src="img/peca14.png" class="pecas">
                 <br> <figcaption> Suporte Articulado Para Monitor Zinnia Rust 100, 17 Pol a 32 Pol<br> <p> R$ 352,64 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca15.png" class="pecas3" id="teste">
-                <br> <figcaption> Placa de Video XFX Radeon RX 9060 XT Gaming Edition OC White, 8GB, GDDR6 <br> <p> R$ 2.379,99 </p> </figcaption>
+            <div class="p1">
+                <img src="img/peca15.png" class="pecas">
+                <br> <figcaption> Placa de Video XFX Radeon RX 9060 XT Gaming Edition OC White, 8GB, GDDR6, 128-bit<br> <p> R$ 2.379,99 </p> </figcaption>
             </div>
 
-            <div class="p">
-                <img src="img/peca16.png" class="pecas3" id="teste">
+            <div class="p1">
+                <img src="img/peca16.png" class="pecas">
                 <br> <figcaption> Gabinete Gamer Pure Power Aqua, Mid Tower, Vidro Temperado, M-ATX, Sem Fonte <br> <p> R$ 149,90 </p> </figcaption>
             </div>
         </div>
     </section>
 
-        <section class="bgAzul">
-            <p> Instagram  </p>
-            <p> Youtube  </p>
-            <p> Twitter  </p>
-            <p> Fale conosco  </p>
-            <p> Termos e políticas de privacidade  </p>
+    <!-- RODAPÉ -->
+    <section class="Azul">
+        <div class="bgAzul">
+            <div class="conheca">
+                <div class="tituloC">
+                    <h1> Conheça-nos </h1>
+                </div>
+            <a href="../Sobre/index.html"> <p> Sobre a Patech </p> </a> 
+            <a href="../Sobre/index.html"> <p> Acessibilidade </p> </a> 
+            <a href="../Sobre/index.html"> <p> Nosso objetivo </p> </a>
+            </div>
+
+            <div class="redesSociais">
+                <div class="tituloR">
+                    <h1> Redes Sociais </h1>
+                </div>
+                <a href="https://www.instagram.com/"><p> Instagram </p> </a>
+                <a href="https://www.youtube.com/"><p> Youtube </p> </a> 
+                <a href="https://x.com/"><p> Twitter </p> </a> 
+                <a href="https://www.facebook.com/"><p> Facebook </p> </a> 
+            </div>
+        
+            <div class="ajuda">
+                <div class="tituloA">
+                    <h1> Ajuda </h1>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"> </a>  <p> Fale conosco </p>
+                    <a href="https://docs.google.com/document/d/18rTox0LHfUA-imoJsFoHJbXr3AYM9WkTjAcXv0uHSYs/edit?tab=t.0">  <p> Termos de uso </p>  </a>  
+                    <a href="https://docs.google.com/document/d/18rTox0LHfUA-imoJsFoHJbXr3AYM9WkTjAcXv0uHSYs/edit?tab=t.w50j8ib6fwmx"> <p> Termos de aceite </p> </a>   
+                    <a href="https://docs.google.com/document/d/18rTox0LHfUA-imoJsFoHJbXr3AYM9WkTjAcXv0uHSYs/edit?tab=t.o8zvehntguuq"> <p> Termos de privacidade </p> </a>  
+                </div>
+            </div>
+
+            <div class="formasPagamento">
+                <div class="tituloP">
+                    <h1> Pagamento </h1>
+                </div>
+                    <img src="img/pix.png" class="pagamento">
+                    <img src="img/nfc.png" class="pagamento">
+                    <img src="img/nubank.png" class="pagamento">
+                    <img src="img/visa.png" class="pagamento">
+            </div>
+
+        </div>
+        
+        <div class="imgRodape">
+        <a href="#usr"><img src="img/logo-rodape.png" class="logoRodape"> </a>
+        </div>
     </section>
+
+    <!-- MODAL DO CARRINHO -->
+    <div id="modalCarrinho" class="modal-carrinho">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModalCarrinho()">&times;</span>
+            <h2>Seu carrinho</h2>
+            <p>O carrinho está vazio no momento.</p>
+        </div>
+    </div>
 
 </body>
 </html>
