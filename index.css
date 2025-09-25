@@ -2,6 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > * {
+  max-width: 100%; /* faz com que elementos não ultrapassem a largura da tela */
+}
+
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -65,14 +81,13 @@ p, figcaption{
   padding-left: 35px;
   border-radius: 8px;
   height: 25px;
-  width: 250px;
+  width: 180px;
   background-color: whitesmoke;
   border: none;
 }
 
 .Pesquise{
   margin-left: 25%;
-
 }
 
 input::placeholder {
@@ -84,8 +99,8 @@ input::placeholder {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  gap: 30px;
+  margin-left: 3%;
+  gap: 2%;
 }
 
 #dashboard {
@@ -410,41 +425,4 @@ h1{
 .fechar:hover,
 .fechar:focus {
   color: black;
-}
-
-/* MODAL DOS FAVORITOS */
-.modal-favoritos {
-  display: none; /* Escondido por padrão */
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo */
-}
-
-.botoesAcaoes1{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  gap: 3%;
-}
-
-.btnRed{
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  background-color: #FFE9A7;
-  border-radius: 20px;
-  border: 2px solid #F2C029;
-  width: 180px;
-  height: 45px;
-  cursor: pointer;
-  transition: transform 0.5s ease;
-}
-.btnRed:hover{
-  transform: translateY(-5px);
-  transition: transform 0.5s ease out;
 }

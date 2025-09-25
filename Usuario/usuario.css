@@ -86,7 +86,7 @@ h1{
   padding-left: 35px;
   border-radius: 8px;
   height: 25px;
-  width: 250px;
+  width: 180px;
   background-color: whitesmoke;
   border: none;
 }
@@ -105,8 +105,8 @@ input::placeholder {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  gap: 30px;
+  margin-left: 3%;
+  gap: 2%;
 }
 
 #dashboard {
@@ -231,19 +231,6 @@ input::placeholder {
   color: black;
 }
 
-/* MODAL DOS FAVORITOS */
-.modal-favoritos {
-  display: none; /* Escondido por padrão */
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo */
-}
-
 /* FOTO DE PERFIL */
 .User {
   display: flex;
@@ -303,106 +290,14 @@ input::placeholder {
   transition: transform 0.5s ease out;
 }
 
-/* CSS para aparecer as sections ou não */
-section{
-  display: none; /*esconde todas as sections */
-}
-
-section.ativo{
-  display: block; /* mostra a seção que estiver visível */
-}
-
 /* ÚLTIMOS PEDIDOS */
-#dadosUsuario, #dadosPedidos, #dadosLista, #dadosEnderecos{
+.ultimosPedidos{
   background-color: #FFE9A7;
   border: 2px solid #F2C029;
   margin: 2%;
   padding: 1%;
 }
 
-#dadosPedidos, #dadosEnderecos{
-  p{
-    margin: 2%;
-  }
-}
-
-.titulos{ 
-  font-family: "Lora", serif;
-  font-size: 250%;
-  font-weight: 200;
-  margin-left: 3%;
-} 
-
-.dados{
-  display: flex;
-  flex-direction: column;
+.pedidos{
   padding: 1%;
-    input::placeholder {
-    color: #6a6a6a;
-    font-weight: 700;  
-    font-family: "Lora", serif;
-  }
-}
-
-#usuarioDados{
-  width: 25%;
-  background-color: #FFE9A7;
-  border: 2px solid #000;
-  border-radius: 20px;
-  margin: 2%;
-  padding: 1%;
-}
-
-.botoesAcaoes{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  margin: 2%;
-  gap: 5%;
-}
-
-.botoesAcaoes1{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  gap: 3%;
-}
-
-.btnRed{
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  background-color: #FFE9A7;
-  border-radius: 20px;
-  border: 2px solid #F2C029;
-  width: 180px;
-  height: 45px;
-  cursor: pointer;
-  transition: transform 0.5s ease;
-}
-.btnRed:hover{
-  transform: translateY(-5px);
-  transition: transform 0.5s ease out;
-}
-
-.produtosFavoritados{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:center ;
-  gap: 10%;
-}
-
-.p1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20%; 
-  padding: 10px;
-  box-sizing: border-box;
-  img{
-    width: 100%;
-
-  }
 }

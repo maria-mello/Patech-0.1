@@ -32,18 +32,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
-
-// FAVORITOS MODAL
-function irFavorito() { //chama o carrinho pelo id
-  document.getElementById("modalFavoritos").style.display = "block";
-}
-function fecharModalFavoritos() {
-  document.getElementById("modalFavoritos").style.display = "none";
-}
-// Fecha o modal se o usuário clicar fora 
-window.onclick = function(event) {
-  const modal = document.getElementById("modalFavoritos");
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
