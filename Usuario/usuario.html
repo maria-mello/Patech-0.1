@@ -39,7 +39,7 @@
 
         <div class="icones">
             <button onclick="irCarrinho()" id="carrinho"></button>
-            <button onclick="" id="favoritos"></button>
+            <button onclick="irFavorito()" id="favoritos"></button>
             <button onclick="irCadastro()" id="dashboard"></button>
         </div>
     </div>
@@ -54,19 +54,83 @@
         </div>
     </section>
     
-    <section class="botoesDados">
-        <button onclick="" class="btnAmarelo" id="abrirModal"> <p> Meus dados </p></button>
-        <button onclick="" class="btnAmarelo"> <p> Meus pedidos </p></button>
-        <button onclick="" class="btnAmarelo"> <p> Minha lista </p></button>
-        <button onclick="" class="btnAmarelo"> <p> Endereços salvos </p></button>
+    <div class="botoesDados">
+        <button onclick="mostrarDados('Usuario')" class="btnAmarelo" id="Modal"> <p> Meus dados </p></button>
+        <button onclick="mostrarDados('Pedidos')" class="btnAmarelo"> <p> Meus pedidos </p></button>
+        <button onclick="mostrarDados('Lista')" class="btnAmarelo"> <p> Minha lista </p></button>
+        <button onclick="mostrarDados('Enderecos')" class="btnAmarelo"> <p> Endereços salvos </p></button>
+    </div>
+
+    <section class="(1)" id="dadosUsuario">
+            <h2 class="titulos"> Meus dados </h2>
+        <div class="dados">
+            <div class="coluna1">
+                <input type="text" name="nomeCompleto" id="usuarioDados" placeholder="Nome completo">
+                <input type="text" name="nomeDeUsuario" id="usuarioDados" placeholder="Nome de usuário">
+                <input type="email" name="emailUsuario" id="usuarioDados" placeholder="Email do usuário">
+            </div>
+            <div class="coluna2">
+                <input type="tel" name="phoneUsuario" id="usuarioDados" placeholder="Telefone usuário">
+                <input type="number" name="cpfUsuario" id="usuarioDados" placeholder="CPF do usuário">
+                <input type="password" name="senhaUsuario" id="usuarioDados" placeholder="Senha Usuário">
+            </div>
+
+            <div class="botoesAcaoes">
+                <button onclick="" alt="editarConta" class="btnRed"> Editar conta </button>
+                <button onclick="" alt="mudarSenha" class="btnRed"> Alterar senha </button>
+                <button onclick="" alt="excluirConta" class="btnRed"> Excluir conta </button>
+            </div>
+        </div>
     </section>
 
-    <section class="ultimosPedidos">
-        <div class="pedidos"> Seus dados serão exibidos aqui! </div>
+    <section class="(2)" id="dadosPedidos">
+        <h2 class="titulos"> Meus pedidos  </h2>
+        <div class="dados">
+            <p> Parece que você não fez nenhum pedido nos últimos 3 meses </p>
+        </div>
+    </section>
+
+    <section class="(3)" id="dadosLista">
+        <h2 class="titulos"> Minha lista  </h2>
+        <div class="dados">
+            <div class="produtosFavoritados">
+                <div class="p1">
+                    <img src="img/peca5.png" class="pecas">
+                    <br> <figcaption> Placa Mae ASRock B450M Steel Legend, DDR4, Socket AMD AM4, M-ATX <br> <p> R$ 789,99 </p> </figcaption>
+                    <div class="botoesAcaoes">
+                        <button onclick="" alt="editarFavoritos" class="btnRed"> Comprar </button>
+                        <button onclick="" alt="excluirFavorito" class="btnRed"> Excluir </button>
+                    </div>
+                </div>
+                <div class="p1">
+                    <img src="img/peca12.png" class="pecas">
+                    <br> <figcaption> Processador Intel Core I5 13400f, 2.5GHz (4.6GHz Turbo) <br> <p> R$ 929,57 </p> </figcaption>
+                    <div class="botoesAcaoes">
+                        <button onclick="" alt="editarFavoritos" class="btnRed"> Comprar </button>
+                        <button onclick="" alt="excluirFavorito" class="btnRed"> Excluir </button>
+                    </div>
+                </div>
+                <div class="p1">
+                    <img src="img/peca6.png" class="pecas">
+                    <br> <figcaption> Memoria Corsair Dominator Platinum RGB, 16GB (2x8GB), DDR4, 3600MHz <br> <p> R$ 629,99 </p> </figcaption>
+                        <div class="botoesAcaoes">
+                            <button onclick="" alt="editarFavoritos" class="btnRed"> Comprar </button>
+                            <button onclick="" alt="excluirFavorito" class="btnRed"> Excluir </button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="(4)" id="dadosEnderecos">
+        <h2 class="titulos"> Meus pedidos  </h2>
+        <div class="dados">
+            <p> Parece que você ainda não cadastrou nenhum endereço! </p>
+        </div>
     </section>
 
     <!-- RODAPÉ -->
-    <section class="rodapeAzul">
+    <div class="rodapeAzul">
         <div class="bgAzul">
             <div class="conheca">
                 <div class="tituloC">
@@ -112,7 +176,7 @@
         <div class="imgRodape">
         <a href="#usr"><img src="img/logo-rodape.png" class="logoRodape"> </a>
         </div>
-    </section>
+    </div>
 
     <!-- MODAL DO CARRINHO -->
     <div id="modalCarrinho" class="modal-carrinho">
@@ -120,6 +184,19 @@
             <span class="fechar" onclick="fecharModalCarrinho()">&times;</span>
             <h2>Seu carrinho</h2>
             <p>O carrinho está vazio no momento.</p>
+        </div>
+    </div>
+
+        <!-- MODAL DOS FAVORITOS  -->
+    <div id="modalFavoritos" class="modal-favoritos">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModalFavoritos()">&times;</span>
+            <h2>Sua lista</h2>
+            <p>Entre na sua conta ou faça cadastro para adicionar produtos a sua lista! </p>
+            <div class="botoesAcaoes1"> 
+                <button onclick="irCadastro()" class="btnRed"> Fazer cadastro </button>
+                <button onclick="irCadastro()" class="btnRed"> Entrar </button>
+            </div>
         </div>
     </div>
 

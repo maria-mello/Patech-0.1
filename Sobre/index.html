@@ -38,7 +38,7 @@
 
         <div class="icones">
             <button onclick="irCarrinho()" id="carrinho"></button>
-            <button onclick="" id="favoritos"></button>
+            <button onclick="irFavorito()" id="favoritos"></button>
             <button onclick="irCadastro()" id="dashboard"></button>
         </div>
     </div>
@@ -85,7 +85,7 @@
     </section>
 
     <section class="sobre02"> <!-- SOBRE A PATECH -->
-        <div class="texto4">
+        <div class="texto2">
             <p> Por trás de cada clique, embalagem e atendimento, existe um time apaixonado que acompanha as mudanças do mercado e antecipa as necessidades dos nossos clientes. Valorizamos o detalhe, a escolha certa e a entrega que surpreende — porque entendemos que cada compra é um investimento, não apenas financeiro, mas também de tempo, confiança e expectativa. </p>
             <p> A Patech cresce lado a lado com você, evoluindo a cada feedback, ampliando nosso catálogo com propósito e otimizando processos para oferecer mais agilidade, eficiência e segurança. Buscamos constantemente novas formas de agregar valor à sua experiência, seja com informações claras, navegação intuitiva ou suporte que resolve.</p>
             <p> Nosso compromisso é com a qualidade em todas as etapas. Desde a curadoria dos produtos até o pós-venda, tudo é pensado para gerar satisfação real. Valorizamos relações duradouras e acreditamos que a tecnologia deve simplificar a vida, conectar pessoas e abrir caminhos — nunca criar barreiras. </p>
@@ -183,6 +183,19 @@
             <span class="fechar" onclick="fecharModalCarrinho()">&times;</span>
             <h2>Seu carrinho</h2>
             <p>O carrinho está vazio no momento.</p>
+        </div>
+    </div>
+
+    <!-- MODAL DOS FAVORITOS  -->
+    <div id="modalFavoritos" class="modal-favoritos">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModalFavoritos()">&times;</span>
+            <h2>Sua lista</h2>
+            <p>Entre na sua conta ou faça cadastro para adicionar produtos a sua lista! </p>
+            <div class="botoesAcaoes1"> 
+                <button onclick="irCadastro()" class="btnRed"> Fazer cadastro </button>
+                <button onclick="irCadastro()" class="btnRed"> Entrar </button>
+            </div>
         </div>
     </div>
 

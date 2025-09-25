@@ -38,7 +38,7 @@
 
         <div class="icones">
             <button onclick="irCarrinho()" id="carrinho"></button>
-            <button onclick="" id="favoritos"></button>
+            <button onclick="irFavorito()" id="favoritos"></button>
             <button onclick="irCadastro()" id="dashboard"></button>
         </div>
     </div>
@@ -261,6 +261,19 @@
             <span class="fechar" onclick="fecharModalCarrinho()">&times;</span>
             <h2>Seu carrinho</h2>
             <p>O carrinho está vazio no momento.</p>
+        </div>
+    </div>
+
+    <!-- MODAL DOS FAVORITOS  -->
+    <div id="modalFavoritos" class="modal-favoritos">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModalFavoritos()">&times;</span>
+            <h2>Sua lista</h2>
+            <p>Entre na sua conta ou faça cadastro para adicionar produtos a sua lista! </p>
+            <div class="botoesAcaoes1"> 
+                <button onclick="irCadastro()" class="btnRed"> Fazer cadastro </button>
+                <button onclick="irCadastro()" class="btnRed"> Entrar </button>
+            </div>
         </div>
     </div>
 
