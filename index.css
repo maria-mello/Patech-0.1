@@ -2,22 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body > * {
-  max-width: 100%; /* faz com que elementos não ultrapassem a largura da tela */
-}
-
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -81,13 +65,14 @@ p, figcaption{
   padding-left: 35px;
   border-radius: 8px;
   height: 25px;
-  width: 180px;
+  width: 250px;
   background-color: whitesmoke;
   border: none;
 }
 
 .Pesquise{
   margin-left: 25%;
+
 }
 
 input::placeholder {
@@ -99,8 +84,8 @@ input::placeholder {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 3%;
-  gap: 2%;
+  margin-left: 5%;
+  gap: 30px;
 }
 
 #dashboard {
@@ -198,17 +183,19 @@ section.slider {
 
 
 /* NOVIDADES  */
+.novidades{
+  margin-top: 3%;
+}
 
 .produtos {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 100%;
   align-items: center;
 }
 
 .itensNovos {
-  margin: 5%;
-  padding: 15px;
+  margin: 5% 10% 5% 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -216,11 +203,9 @@ section.slider {
   gap: 15%;
 
   img{
+    border: 2px solid blue;
     border-radius: 15px;
   }
-}
-
-.itensNovos{
   a{
    color: black;
    font-family: "Poppins", sans-serif;
@@ -229,21 +214,28 @@ section.slider {
  }
 }
 
-.item01, .item02, .item03{
+.item01{
   position: relative;
   cursor: pointer;
   transition: transform 0.5s ease;
+  height: 20%;
+  width: 30%;
+  figcaption{
+    text-align: center;
+    height: 20%;
+    width: 80%;
+  font-weight: 500;
+  }
 }
 
-.item01:hover, .item02:hover, .item03:hover{
+.item01:hover{
   transform: translateY(-5px);
 }
 
 h1{
   font-family: "Lora", serif;
   font-size: 350%;
-  margin-left: 20px;
-  margin: 5%;
+  margin-left: 5%;
 }
 
 /* CATEGORIAS */
@@ -330,8 +322,8 @@ h1{
 }
 
 /* RODAPÉ */
-.Azul {
-  height: 400px;
+.rodapeAzul {
+  height: 500px;
   background-color: #0050A3;
   width: 99.9%;
   border: 1px solid #0050A3;
@@ -341,7 +333,6 @@ h1{
     margin: 5% 0;
   }  
 }
-
 .bgAzul {
   margin: 5%;
   margin-top: 2%;
@@ -380,19 +371,18 @@ h1{
   display: block;
   align-items: center;
   justify-self: center;
-  height: 30%;
-  width: 10%;
-  border-radius: 90%;
-  border: 2px solid #fff;
+  height: 20%;
+  width: 80%;
+
 }
 
 .imgRodape{
   display: block;
-  margin-top: -8%
+
 }
 
 /* MODAL DO CARRINHO */
-.modal-carrinho {
+.modal-carrinho, .modal-favoritos {
   display: none; /* Escondido por padrão */
   position: fixed;
   z-index: 999;
@@ -426,3 +416,90 @@ h1{
 .fechar:focus {
   color: black;
 }
+
+/* MODAL DOS FAVORITOS */
+.botoesAcaoes1{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 3%;
+}
+
+.btnRed{
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: #FFE9A7;
+  border-radius: 20px;
+  border: 2px solid #F2C029;
+  width: 180px;
+  height: 45px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.btnRed:hover{
+  transform: translateY(-5px);
+  transition: transform 0.5s ease out;
+}
+
+
+/* MODAL DOS PRODUTOS */
+.modal-Produto{
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo */
+}
+
+.modal-conteudo {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.fechar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fechar:hover{
+  color: black;
+}
+
+.modais{
+  height: 20%;
+  width: 20%;
+  gap: 5%;
+  background-color: fff;
+  margin-top: 2%;
+}
+button.abrir-modal{
+  background-color: #fff;
+  border: none;
+  font-size: 110% ;
+  }
+
+.TesteModal{
+  width: 80%;
+  
+  }
+  .figLegenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 9%;   
+    width: 80%;
+  }
