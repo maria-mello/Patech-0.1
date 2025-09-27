@@ -254,15 +254,15 @@ input::placeholder {
   width: 100%;
 }
 
-.fotoPerfil img {
+.fotoPerfil {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   object-fit: cover;
   border-radius: 50%;
   width: 60%;
   height: 60%;
-  margin: 2% 2% 2% 22%;
+  margin: 2% 2% 4% -22%;
 }
 
 

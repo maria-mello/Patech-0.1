@@ -193,101 +193,100 @@ section.slider {
 }
 
 /* SOBRE NÓS */
-
 .sobre01, .sobre02, .sobre03, .sobre04{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .tituloS{
-    height: 10%;
-    width: 60%;
-    margin: -10% 12% 8% 0%;
+  height: 10%;
+  width: 60%;
+  margin: -10% 12% 8% 0%;
 }
 
 .texto1, .texto2, .texto3{
-    margin: 3% 5% 5% 5%;
-    width: 40%;
-    height: 85%;
-    padding: 2%;
-    p{
-        text-indent: 1.5em;
-        font-size: 17px;
-        text-align: justify;
-    }
+  margin: 3% 5% 5% 5%;
+  width: 40%;
+  height: 85%;
+  padding: 2%;
+  p{
+    text-indent: 1.5em;
+    font-size: 17px;
+    text-align: justify;
+  }
 }
 
 .texto2{
-    margin: -4% 5% 5% 5%;
-    width: 40%;
-    height: 85%;
-    padding: 2%;
-    p{
-        text-indent: 1.5em;
-        font-size: 17px;
-        text-align: justify;
-    }
+  margin: -4% 5% 5% 5%;
+  width: 40%;
+  height: 85%;
+  padding: 2%;
+  p{
+    text-indent: 1.5em;
+    font-size: 17px;
+    text-align: justify;
+  }
 }
 .texto4{
-    margin: -2% 5% 5% 5%;
-    width: 40%;
-    height: 85%;
-    padding: 2%;
-    p{
-        text-indent: 1.5em;
-        font-size: 17px;
-        text-align: justify;
-    }
+  margin: -2% 5% 5% 5%;
+  width: 40%;
+  height: 85%;
+  padding: 2%;
+  p{
+    text-indent: 1.5em;
+    font-size: 17px;
+    text-align: justify;
+  }
 }
 
 .imgSobre{
-    border-radius: 20px;
-    width: 90%;
-    height: 55%;
-    margin-left: 10%;
+  border-radius: 20px;
+  width: 90%;
+  height: 55%;
+  margin-left: 10%;
 }
 
 .imgSobre1{
-    border-radius: 20px;
-    width: 90%;
-    height: 55%;
-    margin-right: 10%;
+  border-radius: 20px;
+  width: 90%;
+  height: 55%;
+  margin-right: 10%;
 }
 
 .sobre1{
-    margin: 5% 5% 5% 0%;
-    width: 50%;
-    height: 85%;
-    padding: 5%;
-    background-color: #FFE9A7;
-    box-shadow: 10px 10px 10px #0050a3;
+  margin: 5% 5% 5% 0%;
+  width: 50%;
+  height: 85%;
+  padding: 5%;
+  background-color: #FFE9A7;
+  box-shadow: 10px 10px 10px #0050a3;
 }
 
 .sobre2{
-    margin-top: -5.5%;
-    width: 50%;
-    height: 85%;
-    padding: 5%;
-    background-color: #FFE9A7;
-    box-shadow: -10px 10px 10px #0050a3;
+  margin-top: -5.5%;
+  width: 50%;
+  height: 85%;
+  padding: 5%;
+  background-color: #FFE9A7;
+  box-shadow: -10px 10px 10px #0050a3;
 }
 
 .sobre3{
-    margin: -4.3% 5% 5% 0%;
-    width: 50%;
-    height: 85%;
-    padding: 5%;
-    background-color: #FFE9A7;
-    box-shadow: 10px 10px 10px #0050a3;
+  margin: -4.3% 5% 5% 0%;
+  width: 50%;
+  height: 85%;
+  padding: 5%;
+  background-color: #FFE9A7;
+  box-shadow: 10px 10px 10px #0050a3;
 }
 
 .sobre4{
-    margin-top: -5.1%;
-    width: 50%;
-    height: 85%;
-    padding: 5%;
-    background-color: #FFE9A7;
-    box-shadow: -10px 10px 10px #0050a3;
+  margin-top: -5.1%;
+  width: 50%;
+  height: 85%;
+  padding: 5%;
+  background-color: #FFE9A7;
+  box-shadow: -10px 10px 10px #0050a3;
 }
 
 /* RODAPÉ */
