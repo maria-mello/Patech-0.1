@@ -260,11 +260,10 @@ input::placeholder {
   align-items: center;
   object-fit: cover;
   border-radius: 50%;
-  width: 60%;
+  width: 20%;
   height: 60%;
-  margin: 2% 2% 4% -22%;
+  margin: 2%;
 }
-
 
 /* BOAS VINDAS */
 .boasVindas{
@@ -346,7 +345,7 @@ section.ativo{
   }
 }
 
-#usuarioDados{
+#nome, #email, #cpf, #usuarioDados{
   width: 25%;
   background-color: #FFE9A7;
   border: 2px solid #000;
@@ -383,6 +382,7 @@ section.ativo{
   cursor: pointer;
   transition: transform 0.5s ease;
 }
+
 .btnRed:hover{
   transform: translateY(-5px);
   transition: transform 0.5s ease out;

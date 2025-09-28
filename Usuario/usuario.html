@@ -25,7 +25,7 @@
 <body>
     <div class="navbar"> 
         <div class="logoNav">
-            <a href="../index.html"> <img class="Logo" src="../img/Logo.png" alt="Logo"> </img> <a>
+            <a href="../index.html"> <img class="Logo" src="../img/Logo.png" alt="Logo"><a>
         </div>
                 
         <div class="redirecionamento">  
@@ -46,12 +46,13 @@
 
     <section class="User">
         <div class="fotoPerfil">
-            <img alt="Foto de Perfil" id="imagemPerfil">
-            <input type="file" id="uploadImagem" accept="image/*">
-            <button id="mudarFoto"> Alterar foto </button>
+            <form id="form">
+                <input type="file" id="image-input" accept="image/*">
+                <button type="submit">Upload Imagem</button>
+            </form>
         </div>
         <div class="boasVindas">
-            <h1> Olá, Maria!</h1>
+            <h1> Bem vindo(a)!</h1>
             <p> Aqui você encontra todos os dados da sua conta!</p>
         </div>
     </section>
@@ -67,19 +68,19 @@
             <h2 class="titulos"> Meus dados </h2>
         <div class="dados">
             <div class="coluna1">
-                <input type="text" name="nomeCompleto" id="usuarioDados" placeholder="Nome completo">
-                <input type="text" name="nomeDeUsuario" id="usuarioDados1" placeholder="Nome de usuário">
-                <input type="email" name="emailUsuario" id="usuarioDados2" placeholder="Email do usuário">
+                <form id="formPerfil"> 
+                    <input type="text" name="nomeCompleto" id="nome" placeholder="Nome completo">
+                    <input type="email" name="emailUsuario" id="email" placeholder="Email do usuário">
+                    <input type="number" name="cpfUsuario" id="cpf" placeholder="CPF do usuário">
+                    <button type="submit" class="btnRed"> Alterar dados </button>
+                </form>
             </div>
             <div class="coluna2">
-                <input type="tel" name="phoneUsuario" id="usuarioDados3" placeholder="Telefone usuário">
-                <input type="number" name="cpfUsuario" id="usuarioDados4" placeholder="CPF do usuário">
-                <input type="password" name="senhaUsuario" id="usuarioDados5" placeholder="Senha Usuário">
+                <input type="password" name="senhaUsuario" id="usuarioDados" placeholder="Senha Usuário">
             </div>
 
             <div class="botoesAcaoes">
-                <button onclick="" alt="editarConta" class="btnRed"> Editar conta </button>
-                <button onclick="" alt="mudarSenha" class="btnRed"> Alterar senha </button>
+                <button onclick="logout()" alt="sairConta" class="btnRed"> Sair da conta </button>
                 <button onclick="" alt="excluirConta" class="btnRed"> Excluir conta </button>
             </div>
         </div>

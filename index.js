@@ -22,33 +22,29 @@ function irCadastro(){
 }
 
 function irCarrinho() { //chama o carrinho pelo id
-  document.getElementById("modalCarrinho").style.display = "block";
+  document.getElementById("modalCarrinho1").style.display = "block";
 }
-
 function fecharModalCarrinho() {
-  document.getElementById("modalCarrinho").style.display = "none";
+  document.getElementById("modalCarrinho1").style.display = "none";
 }
-
-// Fecha o modal se o usuário clicar fora 
-window.onclick = function(event) {
-  const modal = document.getElementById("modalCarrinho");
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
 
 // FAVORITOS MODAL
 function irFavorito() { //chama o carrinho pelo id
-  document.getElementById("modalFavoritos").style.display = "block";
+  document.getElementById("modalFavoritos1").style.display = "block";
 }
 function fecharModalFavoritos() {
-  document.getElementById("modalFavoritos").style.display = "none";
+  document.getElementById("modalFavoritos1").style.display = "none";
 }
-// Fecha o modal se o usuário clicar fora 
+
 window.onclick = function(event) {
-  const modal = document.getElementById("modalFavoritos");
-  if (event.target === modal) {
-    modal.style.display = "none";
+  const modalCarrinho = document.getElementById("modalCarrinho1");
+  const modalFavoritos = document.getElementById("modalFavoritos1");
+
+  if (event.target === modalCarrinho) {
+    modalCarrinho.style.display = "none";
+  }
+  if (event.target === modalFavoritos) {
+    modalFavoritos.style.display = "none";
   }
 };
 

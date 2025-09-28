@@ -1,17 +1,9 @@
 const API_URL = 'http://localhost:3000';
-
-// Seleciona o elemento principal 'card' para controlar as transições visuais
 let card = document.querySelector(".card");
-
-// Seleciona os botões de controle de transição (Para trocar entre Login e Cadastro)
 let loginButton = document.querySelector(".loginButton"); 
 let cadastroButton = document.querySelector(".cadastroButton"); 
-
-// Seleciona os botões que disparam as ações da API (Os botões de dentro dos forms)
 let entrarButton = document.querySelector(".entrarButton"); 
 let cadastrarButton = document.querySelector(".cadastrarButton"); 
-
-// Seleciona os formulários para pegar os dados
 const formLogin = document.querySelector(".formLogin form");
 const formCadastro = document.querySelector(".formCadastro form");
 
@@ -59,7 +51,7 @@ function Sair() {
   window.location.href = "../index.html"; // Volta paara a tela inicial
 }
 
-// --- LÓGICA DE CADASTRO (COM CRUD) ---
+// CADASTRO 
 // Adiciona um evento de clique ao botão "Cadastrar" para mandar pra API
 cadastrarButton.onclick = async () => {
   // Pega todos os inputs do formulário de cadastro, na ordem que estão no HTML
@@ -91,6 +83,7 @@ try {
           'Content-Type': 'application/json',
       },
       body: JSON.stringify(dadosCadastro),
+      credentials: 'include'
   });
 
   const data = await response.json();
@@ -114,7 +107,7 @@ try {
 }
 };
 
-// LOGIN (INTERAÇÃO COM A API) 
+// LOGIN
 // Adiciona um evento de clique ao botão "Entrar" para mandar pra API
   entrarButton.onclick = async () => {
   // Pega todos os inputs do formulário de login
@@ -137,6 +130,7 @@ try {
               'Content-Type': 'application/json',
           },
           body: JSON.stringify(dadosLogin),
+          credentials: 'include'
       });
       const data = await response.json();
 
@@ -146,7 +140,7 @@ try {
 
           setTimeout(() => {
               // Redireciona para a home após 1.5s
-              window.location.href = "../index.html";
+              window.location.href = "../Usuario/usuario.html";
           }, 1500);
       } else {
           // Se der erro vai exibir a mensagem de erro ("E-mail ou senha inválidos")

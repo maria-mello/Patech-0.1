@@ -382,7 +382,7 @@ h1{
 }
 
 /* MODAL DO CARRINHO */
-.modal-carrinho, .modal-favoritos {
+.modal-carrinho1, .modal-favoritos1 {
   display: none; /* Escondido por padrão */
   position: fixed;
   z-index: 999;
@@ -394,7 +394,7 @@ h1{
   background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
 }
 
-.modal-conteudo {
+.modal-conteudo1 {
   background-color: #fff;
   margin: 10% auto;
   padding: 30px;
@@ -404,16 +404,17 @@ h1{
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.fechar {
+span.fechar1 {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  margin: 1%;
 }
 
-.fechar:hover,
-.fechar:focus {
+.fechar1:hover,
+.fechar1:focus {
   color: black;
 }
 
